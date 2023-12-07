@@ -106,6 +106,13 @@ To observe changes in the deployed application, you can update the image version
 kubectl set image deploy/breakfast breakfast=evryn/breakfast:2.0.0
 ```
 
+To undo the rollout above:
+
+```bash
+kubectl rollout undo deploy/breakfast
+```
+
+
 ### Deploying on Docker Swarm
 
 If you're using Docker Swarm, the deployment process has its own set of commands. Here's how to deploy and access the Breakfast app:
